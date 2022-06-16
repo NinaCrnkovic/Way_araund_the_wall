@@ -9,17 +9,17 @@ using namespace chrono;
 
 int main() {
 
-	Way_around_the_wall p;
+	Way_around_the_wall w;
 
 
 	do {
 		system("cls");
-		p.draw();
+		w.draw();
 		duration<int, std::milli> timespan(100);
 		this_thread::sleep_for(timespan);
 
 
-	} while (p.next());
+	} while (w.next());
 
 	
 
